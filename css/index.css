@@ -63,6 +63,10 @@ form button:hover {
     background-color: #0056b3; /* Um tom mais escuro de azul */
 }
 
+.conteudoEntradas, .conteudoTabela {
+    box-shadow: 0px 4px 8px rgb(161, 161, 161);
+}
+
 .conteudoTabela{
     width: 96%;
     height: 4%;
