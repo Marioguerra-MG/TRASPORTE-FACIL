@@ -86,8 +86,28 @@ form button:hover {
 table{
     width: 100%;
     display: flex;
+    table-layout: fixed;
+    border-collapse: collapse;
     flex-direction: column;
     background-color: white;    
+}
+
+thead tr, tbody tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+thead th, tbody td {
+    flex: 1; /* As colunas terão o mesmo tamanho */
+    text-align: center;
+    padding: 10px;
+}
+
+tbody td {
+    border-top: 1px solid #cecece;
 }
 
 thead tr{

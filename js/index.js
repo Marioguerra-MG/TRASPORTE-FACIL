@@ -80,6 +80,14 @@ function atualizarTabela (){
     rota.forEach((item ,index) => inserirRotas(item, index));
 }
 
+function deleteItem ( index){
+    rota.splice(index , 1);
+    tbody.innerHTML = '';
+    rota.forEach((item ,index) => inserirRotas(item, index));
+    setRotasBD(rota);
+
+}
+
 atualizarTabela();
         
     
