@@ -142,3 +142,31 @@ td i{
 }
 
 
+@media(max-width : 1080px){
+    form input{
+        width: 150px;
+        font-size: 12px;
+    }
+
+    form button{
+        width: 70px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    thead th , td{
+        font-size: 12px;
+
+    }
+
+    td button{
+       font-size: 12px;
+    }
+
+    td i{
+        font-size: 12px;
+    }
+
+}
+
+
