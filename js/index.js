@@ -88,6 +88,12 @@ function deleteItem ( index){
 
 }
 
+document.getElementById('listaMotoristas').addEventListener('click', function(){
+    document.querySelector('.conteudoTabela').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
 atualizarTabela();
         
     

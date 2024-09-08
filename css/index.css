@@ -89,7 +89,8 @@ table{
     table-layout: fixed;
     border-collapse: collapse;
     flex-direction: column;
-    background-color: white;    
+    background-color: white; 
+       
 }
 
 thead tr, tbody tr {
@@ -141,8 +142,17 @@ td i{
     font-size: 18px;
 }
 
+#listaMotoristas{
+    display: none;
+}
+
+.rolaLista{
+    display: none;
+}
+
 
 @media(max-width : 1080px){
+ 
     form input{
         width: 150px;
         font-size: 12px;
@@ -171,7 +181,6 @@ td i{
 
 @media(max-width : 720px){
 
-   
     .conteudoEntradas{
         display: flex;
         width: 95%;
@@ -181,21 +190,18 @@ td i{
     form {
         width: 95%;
         display: flex;
-        flex-direction: column;
-        
-        
+        flex-direction: column;    
     }
 
     form input{
         width: 95%;
         margin-bottom: 20px;
         font-size: 15px;
-
     }
 
     table{
         width: 100%;
-        display: block;
+        display: block;   
     }
 
     thead{
@@ -230,5 +236,30 @@ td i{
         padding-right: 10px;
     }
 }
+
+@media(max-width : 320px){
+
+    .conteudoEntradas{
+        display: flex;
+        width: 95%;
+        height: 100%;
+    }
+
+    #listaMotoristas{
+        display: flex;
+        background-color: none;
+        border: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entradas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+
 
 
