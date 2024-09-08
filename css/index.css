@@ -175,15 +175,14 @@ td i{
     .conteudoEntradas{
         display: flex;
         width: 95%;
-        height: 35%;
+        height: 50%;
     }
 
     form {
         width: 95%;
-        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        
         
     }
 
@@ -230,7 +229,6 @@ td i{
         font-weight: bold;
         padding-right: 10px;
     }
- 
 }
 
 
