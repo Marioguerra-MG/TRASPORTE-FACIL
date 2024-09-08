@@ -169,4 +169,68 @@ td i{
 
 }
 
+@media(max-width : 720px){
+
+   
+    .conteudoEntradas{
+        display: flex;
+        width: 95%;
+        height: 35%;
+    }
+
+    form {
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+
+    form input{
+        width: 95%;
+        margin-bottom: 20px;
+        font-size: 15px;
+
+    }
+
+    table{
+        width: 100%;
+        display: block;
+    }
+
+    thead{
+        display: none;
+    }
+
+    tbody{
+        display: block;
+    }
+
+    tbody tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #5e5e5e;
+        padding: 10px;
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        font-size: 12px;
+        border-top: none;
+        text-align: left; /* Alinha os itens à direita */
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        flex-basis: 40%;
+        text-align: left;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+ 
+}
+
 

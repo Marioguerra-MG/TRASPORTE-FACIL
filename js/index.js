@@ -19,10 +19,10 @@ function inserirRotas (item,index){
 
     tr.innerHTML = `
 
-        <td>${item.motorista}</td>
-        <td>${item.caminhao}</td>
-        <td>${item.lacre}</td>
-        <td>${item.destino}</td>
+        <td  data-label="Motorista">${item.motorista}</td>
+        <td data-label="Caminhão">${item.caminhao}</td>
+        <td data-label="Lacre">${item.lacre}</td>
+        <td data-label="Destino">${item.destino}</td>
         
         <td class="acao">
             <button id="deletar" onclick="deleteItem(${index})"><i class='bx bx-trash'></i></button>
