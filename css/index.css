@@ -20,7 +20,7 @@ body{
 
 .conteudoEntradas{
     width: 96%;
-    height: 10%;
+    height: 15%;
     display: flex;
     margin-top: 15px;
     border-radius: 15px 15px 0 0;
@@ -31,6 +31,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .entradas form{
@@ -150,6 +151,12 @@ td i{
     display: none;
 }
 
+tbody{
+    display: block;
+    max-height: 80%; /* Altura máxima do tbody */
+    overflow-y: auto;
+}
+
 
 @media(max-width : 1080px){
  
@@ -175,6 +182,12 @@ td i{
 
     td i{
         font-size: 12px;
+    }
+
+    tbody{
+        display: block;
+        max-height: 80%; /* Altura máxima do tbody */
+        overflow-y: auto;
     }
 
 }
@@ -235,9 +248,19 @@ td i{
         font-weight: bold;
         padding-right: 10px;
     }
+
+    tbody{
+        display: block;
+        max-height: 100%; /* Altura máxima do tbody */
+        overflow-y: auto;
+    }
 }
 
 @media(max-width : 320px){
+
+    #logo{
+        font-size: 18px;
+    }
 
     .conteudoEntradas{
         display: flex;
@@ -247,7 +270,7 @@ td i{
 
     #listaMotoristas{
         display: flex;
-        background-color: none;
+        background-color: transparent;
         border: none;
         flex-direction: column;
         align-items: center;
@@ -257,6 +280,12 @@ td i{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    tbody{
+        display: block;
+        max-height: 100%; /* Altura máxima do tbody */
+        overflow-y: auto;
     }
 
 }
