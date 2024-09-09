@@ -81,10 +81,17 @@ function atualizarTabela (){
 }
 
 function deleteItem ( index){
-    rota.splice(index , 1);
-    tbody.innerHTML = '';
-    rota.forEach((item ,index) => inserirRotas(item, index));
-    setRotasBD(rota);
+    if(confirm("Você tem certeza que deseja excluir esta rota?")){
+        rota.splice(index , 1);
+        tbody.innerHTML = '';
+        rota.forEach((item ,index) => inserirRotas(item, index));
+        setRotasBD(rota);
+    
+        setTimeout(() => {
+            alert("Rota excluída com sucesso");
+        }, 0);
+
+    }
 
 }
 
