@@ -6,6 +6,8 @@ const tbody = document.querySelector('tbody');
 
 const registrar = document.querySelector('#registrar');
 
+const filter = document.querySelector('#pesquisar');
+
 const getRotasBD = () => JSON.parse(localStorage.getItem('bdRotas')) ??[]
 const setRotasBD = (rotas) => localStorage.setItem('bdRotas' , JSON.stringify(rotas))
 
@@ -100,6 +102,22 @@ document.getElementById('listaMotoristas').addEventListener('click', function(){
         behavior: 'smooth'
     });
 });
+
+function filterRotas() {
+    const filtrar = filter.value.toLowerCase();
+    tbody.innerHTML = '';
+    rota.filter(item =>
+        item.motorista.toLowerCase().includes(filtrar) ||
+        item.caminhao.toLowerCase().includes(filtrar) ||
+        item.lacre.toLowerCase().includes(filtrar) ||
+        item.destino.toLowerCase().includes(filtrar)
+    ).forEach((item, index) =>{
+        inserirRotas(item , index);
+    });
+
+}
+
+filter.addEventListener('input', filterRotas);
 
 atualizarTabela();
         
