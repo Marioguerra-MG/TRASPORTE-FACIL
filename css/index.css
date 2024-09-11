@@ -158,11 +158,18 @@ tbody{
 }
 
 
-@media(max-width : 1080px){
- 
+@media(max-width : 1260px){
+
     form input{
         width: 150px;
         font-size: 12px;
+        text-align: center;
+    }
+
+    #pesquisar{
+        border: 1px solid black;
+        border-radius: 8px;
+        margin-top: 15px;
     }
 
     form button{
@@ -192,7 +199,13 @@ tbody{
 
 }
 
-@media(max-width : 720px){
+@media(max-width : 940px){
+
+    #pesquisar{
+        border: 1px solid black;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
 
     .conteudoEntradas{
         display: flex;
