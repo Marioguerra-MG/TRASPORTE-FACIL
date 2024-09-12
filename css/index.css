@@ -157,6 +157,68 @@ tbody{
     overflow-y: auto;
 }
 
+.modalConteiner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.modalResultados table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.modalResultados table, th, td {
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+button#fecharModal {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff5c5c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#addPesquisar{
+    background-color: #0069d9;
+    border: none;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-top: 15px;
+}
+
+#pesquisar{
+    border: 1px solid black;
+    width: 90%;
+    height: 40px;
+    padding-left: 8px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
 
 @media(max-width : 1260px){
 
@@ -173,8 +235,8 @@ tbody{
     }
 
     form button{
-        width: 70px;
-        height: 35px;
+        width: 90px;
+        height: 40px;
         font-size: 12px;
     }
 

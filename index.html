@@ -18,9 +18,10 @@
                 <input type="text" id="numeroCaminhao" placeholder="Numero do caminhão" required/>
                 <input type="text" id="lacre" placeholder="Lacre de segurança" required/>
                 <input type="text" id="destino" placeholder="Destino" required/>
-                <button type="submit" id="registrar">REGISTRAR</button>
-                <input type="search" id="pesquisar" placeholder="Pesquisar"/>
-                
+                <div class="registrarPesquisar">
+                    <button id="registrar">REGISTRAR</button>
+                    <button id="addPesquisar">Pesquisar</button>
+                </div>
             </form>
             <button id="listaMotoristas">Lista de motoristas<i class="fa-solid fa-chevron-down"></i></button> 
         </div>
@@ -44,6 +45,29 @@
                  <!-- As linhas da tabela serão inseridas dinamicamente -->
             </tbody>
         </table>
+    </div>
+
+    <!-- Modal para exibir os itens filtrados -->
+    <div class="modalConteiner" style="display: none;"> <!-- Modal inicialmente escondido -->
+        <div class="modal">
+            <input type="text" id="pesquisar" placeholder="Pesquisar..." />
+            <div class="modalResultados">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Motorista</th>
+                            <th>Caminhão</th>
+                            <th>Lacre</th>
+                            <th>Destino</th>
+                        </tr>
+                    </thead>
+                    <tbody id="modalTbody">
+                        <!-- Resultados filtrados aparecerão aqui -->
+                    </tbody>
+                </table>
+            </div>
+            <button id="fecharModal">Fechar</button>
+        </div>
     </div>
 
     
