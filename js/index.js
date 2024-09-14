@@ -14,10 +14,15 @@ const setRotasBD = (rotas) => localStorage.setItem('bdRotas', JSON.stringify(rot
 let rota = getRotasBD();
 let id;
 
+
+motorista.focus();
+
+
 function openModal() {
     modal.style.display = 'flex'; // Exibe o modal
     document.getElementById('modalTbody').innerHTML = ''; // Limpa os resultados anteriores
     filter.value = ''; // Limpa o campo de pesquisa ao abrir o modal
+    filter.focus();
 
 }
 
