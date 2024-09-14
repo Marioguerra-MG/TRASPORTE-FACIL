@@ -18,6 +18,7 @@ function openModal() {
     modal.style.display = 'flex'; // Exibe o modal
     document.getElementById('modalTbody').innerHTML = ''; // Limpa os resultados anteriores
     filter.value = ''; // Limpa o campo de pesquisa ao abrir o modal
+
 }
 
 function closeModal() {
@@ -108,7 +109,6 @@ function filterRotas() {
 
 document.getElementById('addPesquisar').addEventListener('click', function () {
     openModal(); // Abre o modal quando o botão "Pesquisar" é clicado
-    atualizarTabela();
 });
 
 document.getElementById('fecharModal').addEventListener('click', function () {

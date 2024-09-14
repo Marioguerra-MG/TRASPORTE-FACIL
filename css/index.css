@@ -166,8 +166,9 @@ tbody{
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     z-index: 1000;
+    padding-top: 50px;
 }
 
 .modal {
@@ -177,6 +178,7 @@ tbody{
     width: 80%;
     max-width: 500px;
     text-align: center;
+   
 }
 
 .modalResultados table {

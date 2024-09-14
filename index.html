@@ -14,13 +14,13 @@
         <div class="entradas">
             <h1 id="logo">TransporteFacil</h1>
             <form>
-                <input type="text" id="nomeMotorista" placeholder="Nome do motorista"required/>
-                <input type="text" id="numeroCaminhao" placeholder="Numero do caminhão" required/>
-                <input type="text" id="lacre" placeholder="Lacre de segurança" required/>
-                <input type="text" id="destino" placeholder="Destino" required/>
+                <input type="text"  id="nomeMotorista" placeholder="Nome do motorista" />
+                <input type="text" id="numeroCaminhao" placeholder="Numero do caminhão"/>
+                <input type="text" id="lacre" placeholder="Lacre de segurança"/>
+                <input type="text" id="destino" placeholder="Destino"/>
                 <div class="registrarPesquisar">
-                    <button id="registrar">REGISTRAR</button>
-                    <button id="addPesquisar">Pesquisar</button>
+                    <button  type="button" id="registrar">REGISTRAR</button>
+                    <button type="button" id="addPesquisar">Pesquisar</button>
                 </div>
             </form>
             <button id="listaMotoristas">Lista de motoristas<i class="fa-solid fa-chevron-down"></i></button> 
@@ -50,7 +50,7 @@
     <!-- Modal para exibir os itens filtrados -->
     <div class="modalConteiner" style="display: none;"> <!-- Modal inicialmente escondido -->
         <div class="modal">
-            <input type="text" id="pesquisar" placeholder="Pesquisar..." />
+            <input type="text" id="pesquisar" placeholder="Pesquisar..."/>
             <div class="modalResultados">
                 <table>
                     <thead>
@@ -66,7 +66,7 @@
                     </tbody>
                 </table>
             </div>
-            <button id="fecharModal">Fechar</button>
+            <button type="button" id="fecharModal">Fechar</button>
         </div>
     </div>
 
